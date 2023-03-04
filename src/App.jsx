@@ -3,8 +3,6 @@ import "./App.css";
 import Home from "./pages/Home";
 import Merchandise from "./pages/Merchandise";
 import Events from "./pages/Events";
-import Technical from "./pages/Technical";
-import Timer from "./components/Timer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([

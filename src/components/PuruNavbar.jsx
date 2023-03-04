@@ -1,21 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 import logo from "../../images/xception-logo.png";
 
 export default function PuruNavbar() {
   const [navbar, setNavbar] = useState(false);
-
+  // const page = useLocation();
+  // console.log(page.pathname);
   return (
     <nav className="w-full shadow gradient-bg-welcome-nav">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="//">
-              <img
-                src={logo}
-                alt="logo"
-                className="w-32 mr-64 ml-10 cursor-pointer"
-              />
+              <img src={logo} alt="logo" className="w-32 cursor-pointer" />
             </a>
             <div className="md:hidden">
               <button
@@ -62,40 +59,55 @@ export default function PuruNavbar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
-                {/* <Link to={`/`}>Home</Link> */}
-                <a href="/">Home</a>
-              </li>
-              <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
-                {/* <Link to={"/events"}>Events
+              <a href="/">
+                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                  {/* <Link to={`/`}>Home</Link> */}
+                  Home
+                  {/* <Link to="/about">Puru</Link> */}
+                </li>
+              </a>
+              <a href="/events">
+                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                  {/* <Link to={"/events"}>Events
                 </Link> */}
-                <a href="/events">Events</a>
-              </li>
-              <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
-                {/* <Link to={"/merchandise"}>Merchandise
+                  Events
+                </li>
+              </a>
+              <a href="/merchandise">
+                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                  {/* <Link to={"/merchandise"}>Merchandise
                 </Link> */}
-                <a href="/merchandise">Merchandise</a>
-              </li>
-              <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
-                {/* <Link to={"/gallery"}>Gallery
+                  Merchandise
+                </li>
+              </a>
+              <a href="/gallery">
+                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                  {/* <Link to={"/gallery"}>Gallery
                 </Link> */}
-                <a href="/gallery">Gallery</a>
-              </li>
-              <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
-                {/* <Link to={"/team"}>Team
+                  Gallery
+                </li>
+              </a>
+              <a href="/team">
+                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                  {/* <Link to={"/team"}>Team
                 </Link> */}
-                <a href="/team">Team</a>
-              </li>
-              <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
-                {/* <Link to={"/sponsors"}>Sponsors
+                  Team
+                </li>
+              </a>
+              <a href="/sponsors">
+                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                  {/* <Link to={"/sponsors"}>Sponsors
                 </Link> */}
-                <a href="/sponsors">Sponsors</a>
-              </li>
-              <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
-                {/* <Link to={"/about"}>About
+                  Sponsors
+                </li>
+              </a>
+              <a href="/about">
+                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                  {/* <Link to={"/about"}>About
                  Us</Link> */}
-                <a href="/about">About Us</a>
-              </li>
+                  About Us
+                </li>
+              </a>
             </ul>
           </div>
         </div>
