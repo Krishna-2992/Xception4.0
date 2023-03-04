@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+.dis{
+    display:none;
+}
+.disOn:hover > .dis{
+    display:inline-block;
+}
+.text-info{
+    font-family: 'Manrope', sans-serif;
+}
