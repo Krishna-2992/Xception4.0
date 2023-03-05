@@ -39,7 +39,7 @@ export default function Merchandise() {
             </li>
           </ul>
 
-          <div className="grid grid-cols-3 mt-3 text-white list-none w-1/2 text-md ml-4">
+          <div className="grid grid-cols-3 mt-3 text-white list-none w-full md:w-1/2 text-md ml-4">
             <li>Size</li>
             <li>Chest</li>
             <li>Length</li>

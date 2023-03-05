@@ -1,11 +1,8 @@
 import { useState } from "react";
-// import { Link, useLocation } from "react-router-dom";
 import logo from "../../images/xception-logo.png";
 
 export default function PuruNavbar() {
   const [navbar, setNavbar] = useState(false);
-  // const page = useLocation();
-  // console.log(page.pathname);
   return (
     <nav className="w-full shadow gradient-bg-welcome-nav">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
