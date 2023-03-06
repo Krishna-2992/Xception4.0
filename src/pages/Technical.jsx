@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import bg from "../../images/events-bg.jpg";
 
 export default function Events() {
