@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import Merchandise from "./pages/Merchandise";
+import Sponsors from "./pages/Sponsors";
 import Events from "./pages/Events";
 import {
   BrowserRouter,
@@ -10,45 +11,30 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import PuruNavbar from "./components/PuruNavbar";
+// import PuruNavbar from "./components/PuruNavbar";
 import Gallery from "./pages/Gallery";
-
-const router = createBrowserRouter([
-  {
-    path: "/merchandise",
-    element: <Merchandise />,
-  },
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/events",
-    element: <Events />,
-  },
-]);
+import Team from "./components/team/Team";
+import TeamDetails from "./components/team/TeamDetails";
+import Navbar from "./components/Navbar";
+import PuruNavbar from "./components/PuruNavbar";
 
 export default function App() {
   return (
     <div className="gradient-bg-welcome h-full md:h-screen ">
       <BrowserRouter>
         <PuruNavbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Events" element={<Events />} />
           <Route path="/Merchandise" element={<Merchandise />} />
-          {/* <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Team" element={<Team />} /> */}
+          <Route path="/Team" element={<Team />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/teamdetails" element={<TeamDetails />} />
           <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Sponsors" element={<Sponsors />} />
         </Routes>
       </BrowserRouter>
-
-      {/* <RouterProvider router={router} /> */}
-      {/* <Home /> */}
-      {/* <Merchandise /> */}
-      {/* <Events /> */}
-      {/* <Technical /> */}
-      {/* <Timer/> */}
     </div>
   );
 }

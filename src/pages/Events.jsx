@@ -1,5 +1,6 @@
 import React from "react";
 import bg from "../../images/events-bg.jpg";
+import PuruNavbar from "../components/PuruNavbar";
 
 export default function Events() {
   const techUrl =
@@ -18,7 +19,7 @@ export default function Events() {
     console.log(name);
     console.log(link);
     return (
-      <div className="flex border-2 border-sky-500/70 rounded-md my-4 justify-center items-center p-3 gap-4 m-8">
+      <div className="flex border-2 white-glassmorphism shadow-lg shadow-cyan-500/50 border-sky-500/70 rounded-md my-4 justify-center items-center p-3 gap-4 m-8">
         <div className=" text-white parentContainer mb-0">
           <img src={link} alt="" className="md:h-40 cursor-pointer" />
           <h1 className="bottom">{name}</h1>
@@ -33,65 +34,68 @@ export default function Events() {
   };
 
   return (
-    <div className="bg-[url('https://wallpaperaccess.com/full/1892783.jpg')] md:h-full ">
-      {/* <Navbar active="Events"/> */}
-      <div className="grid grid-cols-1 items-center md:grid-cols-2">
-        <Card
-          name="technical"
-          link={techUrl}
-          events={[
-            "CSS Battle",
-            "Blind Coding",
-            "Coding Duo",
-            "Gateroid",
-            "DSAQuizHeadd",
-            "TurnCoat",
-          ]}
-        />
-        <Card
-          name="Fun events"
-          link={funUrl}
-          events={[
-            "Leg Cricket",
-            "Shringar Anime",
-            "Bhukkad",
-            "Deft Hands",
-            "Maze",
-            "Tug of War",
-          ]}
-        />
-        <Card
-          name="Center of Attraction"
-          link={centerUrl}
-          events={[
-            "Concert Night",
-            "Murder Mystery",
-            "Fahrenheit",
-            "Hasya Kavi",
-            "Bollywood Day",
-          ]}
-        />
-        <Card
-          name="Online Events"
-          link={onlineUrl}
-          events={[
-            "Capture-uec",
-            "Painteption",
-            "WebbingDuo",
-            "MemeJam",
-            "ChitraKatha",
-          ]}
-        />
-        <Card
-          name="Social Drives"
-          link={socialUrl}
-          events={["css battle", "blind coding"]}
-        />
-        <Card
-          name="DJ Night"
-          link={DJUrl}
-          events={["css battle", "blind coding"]}
-        />
+    <div>
+      {/* <PuruNavbar /> */}
+      <div className="bg-[url('https://wallpaperaccess.com/full/1892783.jpg')] md:h-full ">
+        {/* <Navbar active="Events"/> */}
+        <div className="grid grid-cols-1 items-center md:grid-cols-2">
+          <Card
+            name="technical"
+            link={techUrl}
+            events={[
+              "CSS Battle",
+              "Blind Coding",
+              "Coding Duo",
+              "Gateroid",
+              "DSAQuizHeadd",
+              "TurnCoat",
+            ]}
+          />
+          <Card
+            name="Fun events"
+            link={funUrl}
+            events={[
+              "Leg Cricket",
+              "Shringar Anime",
+              "Bhukkad",
+              "Deft Hands",
+              "Maze",
+              "Tug of War",
+            ]}
+          />
+          <Card
+            name="Center of Attraction"
+            link={centerUrl}
+            events={[
+              "Concert Night",
+              "Murder Mystery",
+              "Fahrenheit",
+              "Hasya Kavi",
+              "Bollywood Day",
+            ]}
+          />
+          <Card
+            name="Online Events"
+            link={onlineUrl}
+            events={[
+              "Capture-uec",
+              "Painteption",
+              "WebbingDuo",
+              "MemeJam",
+              "ChitraKatha",
+            ]}
+          />
+          <Card
+            name="Social Drives"
+            link={socialUrl}
+            events={["css battle", "blind coding"]}
+          />
+          <Card
+            name="DJ Night"
+            link={DJUrl}
+            events={["css battle", "blind coding"]}
+          />
+        </div>
       </div>
     </div>
   );

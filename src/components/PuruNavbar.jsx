@@ -58,49 +58,70 @@ export default function PuruNavbar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <NavLink to={"/"}>
-                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                <li
+                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
+                  onClick={() => setNavbar(!navbar)}
+                >
                   {/* <Link to={`/`}>Home</Link> */}
                   Home
                   {/* <Link to="/about">Puru</Link> */}
                 </li>
               </NavLink>
               <NavLink to="/events">
-                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                <li
+                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
+                  onClick={() => setNavbar(!navbar)}
+                >
                   {/* <Link to={"/events"}>Events
                 </Link> */}
                   Events
                 </li>
               </NavLink>
               <NavLink to="/merchandise">
-                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                <li
+                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
+                  onClick={() => setNavbar(!navbar)}
+                >
                   {/* <Link to={"/merchandise"}>Merchandise
                 </Link> */}
                   Merchandise
                 </li>
               </NavLink>
               <NavLink to="/gallery">
-                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                <li
+                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
+                  onClick={() => setNavbar(!navbar)}
+                >
                   {/* <Link to={"/gallery"}>Gallery
                 </Link> */}
                   Gallery
                 </li>
               </NavLink>
               <NavLink to="/team">
-                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                <li
+                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
+                  onClick={() => setNavbar(!navbar)}
+                >
                   {/* <Link to={"/team"}>Team
                 </Link> */}
                   Team
                 </li>
               </NavLink>
               <NavLink to="/sponsors">
-                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                <li
+                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
+                  onClick={() => setNavbar(!navbar)}
+                >
                   {/* <Link to={"/sponsors"}>Sponsors
                 </Link> */}
                   Sponsors
                 </li>
               </NavLink>
               <NavLink to="/about">
-                <li className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2">
+                <li
+                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
+                  onClick={() => setNavbar(!navbar)}
+                >
                   {/* <Link to={"/about"}>About
                  Us</Link> */}
                   About Us
