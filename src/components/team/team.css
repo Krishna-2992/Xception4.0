@@ -11,7 +11,7 @@
           font-family: sans-serif;
       }
 
-      .people-card {
+        .people-card {
           width: 250px;
           /* border: 2px solid #999; */
           /*			background: #fe8302; orange*/
@@ -19,6 +19,7 @@
           border-radius: 20px;
           box-sizing: border-box;
           box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+          margin: 50px auto;
       }
 
       .people-card .img {
@@ -29,6 +30,7 @@
           width: 100%;
           aspect-ratio: 3 / 4;
           object-fit: cover;
+          object-position: 50% 10%;
           display: flex;
           border-top-left-radius: 18px;
           border-top-right-radius: 18px;
@@ -71,16 +73,15 @@
       }
 
       .people-card .rear {
-          background: #262626;
-          padding: 10px;
-          position: absolute;
-          box-sizing: border-box;
-          width: 100%;
-          height: 100%;
-          /*			transform-origin: top;*/
-          /*			transition: 0.5s ease-in-out;*/
-          /*			transform: rotateX(-90deg) translateZ(85px);*/
-          /*			transform-style: preserve-3d;*/
+        background: #262626;
+        padding: 10px;
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       .people-card .rear .social-icons {

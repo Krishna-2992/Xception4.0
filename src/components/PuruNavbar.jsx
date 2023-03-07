@@ -10,7 +10,10 @@ export default function PuruNavbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <NavLink to="/">
-              <img src={logo} alt="logo" className="w-32 cursor-pointer" />
+              {/* <img src={logo} alt="logo" className="w-32 h-4 cursor-pointer " /> */}
+              <div className="text-[#D3D3D3] text-4xl font-bold">
+                Xception 4.0
+              </div>
             </NavLink>
             <div className="md:hidden">
               <button
@@ -122,9 +125,7 @@ export default function PuruNavbar() {
                   className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
                   onClick={() => setNavbar(!navbar)}
                 >
-                  {/* <Link to={"/about"}>About
-                 Us</Link> */}
-                  About Us
+                  About
                 </li>
               </NavLink>
             </ul>

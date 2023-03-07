@@ -6,51 +6,49 @@ import { NavLink } from "react-router-dom";
 const TeamCard = (props) => {
   return (
     <>
-      <div id="wrapper">
-        <div className="people-card">
-          <div className="img">
-            <img src={props.imgurl} alt="" />
+      <div className="people-card">
+        <div className="img">
+          <img src={props.imgurl} alt="" />
+        </div>
+        <div className="details">
+          <div className="front">
+            <h2>
+              {props.name}
+              <br />
+              <span>{props.position}</span>
+            </h2>
           </div>
-          <div className="details">
-            <div className="front">
-              <h2>
-                {props.name}
-                <br />
-                <span>{props.position}</span>
-              </h2>
-            </div>
-            <div className="rear">
-              <ul className="social-icons">
-                {props.instagram && (
-                  <li>
-                    <a href={props.instagram} target="_blank">
-                      <i className="fa-brands fa-instagram"></i>
-                    </a>
-                  </li>
-                )}
-                {props.linkedin && (
-                  <li>
-                    <a href={props.linkedin} target="_blank">
-                      <i className="fa-brands fa-linkedin"></i>
-                    </a>
-                  </li>
-                )}
-                {props.whatsapp && (
-                  <li>
-                    <a href={props.whatsapp} target="_blank">
-                      <i className="fa-brands fa-whatsapp"></i>
-                    </a>
-                  </li>
-                )}
-              </ul>
-              {props.Members && (
-                <div className="more-btn">
-                  <NavLink to={"/teamdetails?id=" + props.dataId}>
-                    Members
-                  </NavLink>
-                </div>
+          <div className="rear">
+            <ul className="social-icons">
+              {props.instagram && (
+                <li>
+                  <a href={props.instagram} target="_blank">
+                    <i className="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
               )}
-            </div>
+              {props.linkedin && (
+                <li>
+                  <a href={props.linkedin} target="_blank">
+                    <i className="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              )}
+              {props.whatsapp && (
+                <li>
+                  <a href={props.whatsapp} target="_blank">
+                    <i className="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+              )}
+            </ul>
+            {props.Members && (
+              <div className="more-btn">
+                <NavLink to={"/teamdetails?id=" + props.dataId}>
+                  Members
+                </NavLink>
+              </div>
+            )}
           </div>
         </div>
       </div>

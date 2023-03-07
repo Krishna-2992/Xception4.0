@@ -29,6 +29,7 @@ const TeamDetails = () => {
                 position={data.position}
                 instagram={data.instagram}
                 whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -42,6 +43,7 @@ const TeamDetails = () => {
                 position={data.position}
                 instagram={data.instagram}
                 whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -54,7 +56,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -67,7 +69,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -80,7 +82,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -93,7 +95,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -106,7 +108,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -119,7 +121,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -132,7 +134,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -145,7 +147,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );
@@ -158,7 +160,7 @@ const TeamDetails = () => {
                 name={data.name}
                 position={data.position}
                 instagram={data.instagram}
-                whatsapp={data.whatsapp}
+                linkedin={data.linkedin}
                 imgurl={data.imgurl}
               />
             );

@@ -15,24 +15,26 @@ import {
 import Gallery from "./pages/Gallery";
 import Team from "./components/team/Team";
 import TeamDetails from "./components/team/TeamDetails";
-import Navbar from "./components/Navbar";
 import PuruNavbar from "./components/PuruNavbar";
+import EventDetails from "./pages/EventDetails";
+import AboutUs from "./pages/AboutUs";
 
 export default function App() {
   return (
-    <div className="gradient-bg-welcome h-full md:h-screen ">
+    <div className=" h-full md:h-screen ">
       <BrowserRouter>
         <PuruNavbar />
         {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Events" element={<Events />} />
-          <Route path="/Merchandise" element={<Merchandise />} />
-          <Route path="/Team" element={<Team />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/merchandise" element={<Merchandise />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/eventDetails" element={<EventDetails />} />
           <Route path="/teamdetails" element={<TeamDetails />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Sponsors" element={<Sponsors />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
     </div>
