@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import eventData from "./eventData";
+import PuruNavbar from "../components/PuruNavbar";
 
 export default function EventDetails() {
   const [eventDataId, setEventDataId] = useState(
@@ -39,6 +40,7 @@ export default function EventDetails() {
   };
   return (
     <>
+      <PuruNavbar />
       <div className="grid grid-cols-1 items-center md:grid-cols-2">
         {eventDataId == "technical"
           ? eventData.technical.events.map((data) => {

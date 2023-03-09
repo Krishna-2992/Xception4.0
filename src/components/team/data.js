@@ -80,6 +80,20 @@ const data6 = [
     imgurl:
       "https://firebasestorage.googleapis.com/v0/b/direct-axiom-325907.appspot.com/o/xception4.0-team%2FIMG_20230303_163439-min.jpg?alt=media&token=8f4fa0d7-d6bc-4979-8235-758ed8533847",
   },
+  {
+    name: "Krishna Agrawal",
+    instagram: "https://www.instagram.com/krishnaagr2992/",
+    linkedin: "https://www.linkedin.com/in/krishna-agrawal-b6134b246",
+    imgurl:
+      "https://firebasestorage.googleapis.com/v0/b/direct-axiom-325907.appspot.com/o/xception4.0-team%2FKrishna_li.jpg?alt=media&token=5c53ff77-5686-42eb-b706-f1ee83ccdac3",
+  },
+  {
+    name: "Sarwang Jain",
+    instagram: "https://www.instagram.com/jainsarwang/",
+    linkedin: "https://www.linkedin.com/in/jainsarwang",
+    imgurl:
+      "https://firebasestorage.googleapis.com/v0/b/direct-axiom-325907.appspot.com/o/xception4.0-team%2FInShot_20221221_234819270.jpg?alt=media&token=8d457c76-8bcf-4d48-b8c6-7ad13042f535",
+  },
 ];
 
 const data7 = [

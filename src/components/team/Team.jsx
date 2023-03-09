@@ -1,10 +1,12 @@
 import React from "react";
 import TeamCard from "./TeamCard.jsx";
 import "./team.css";
+import PuruNavbar from "../PuruNavbar.jsx";
 
-const Team = () => {
+const Team = ({ active }) => {
   return (
     <>
+      <PuruNavbar active={active} />
       <div id="teams">
         <h1
           style={{

@@ -1,4 +1,5 @@
 import React from "react";
+import PuruNavbar from "../components/PuruNavbar";
 
 class Gallery extends React.Component {
   constructor() {
@@ -177,6 +178,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <>
+        <PuruNavbar />
         <section className="img-gallery">
           <h2>Images</h2>
 

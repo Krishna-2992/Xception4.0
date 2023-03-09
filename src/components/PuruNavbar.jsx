@@ -2,16 +2,29 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/xception-logo.png";
 
-export default function PuruNavbar() {
+export default function PuruNavbar({ active }) {
   const [navbar, setNavbar] = useState(false);
+  // const [currActive, setcurrActive] = useState(active);
+  const Tag = ({ title }) => {
+    return (
+      <div
+        className={`text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2 ${
+          title === active ? "white-glassmorphism" : ""
+        }`}
+        onClick={() => setNavbar(!navbar)}
+      >
+        {title}
+      </div>
+    );
+  };
   return (
-    <nav className="w-full shadow gradient-bg-welcome-nav">
+    <nav className="w-full shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <NavLink to="/">
               {/* <img src={logo} alt="logo" className="w-32 h-4 cursor-pointer " /> */}
-              <div className="text-[#D3D3D3] text-4xl font-bold">
+              <div className="text-[#808080] text-4xl font-bold">
                 Xception 4.0
               </div>
             </NavLink>
@@ -61,72 +74,28 @@ export default function PuruNavbar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <NavLink to={"/"}>
-                <li
-                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {/* <Link to={`/`}>Home</Link> */}
-                  Home
-                  {/* <Link to="/about">Puru</Link> */}
-                </li>
+                <Tag title="Home" />
+              </NavLink>
+              <NavLink to="/schedule">
+                <Tag title="Schedule" />
               </NavLink>
               <NavLink to="/events">
-                <li
-                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {/* <Link to={"/events"}>Events
-                </Link> */}
-                  Events
-                </li>
+                <Tag title="Events" />
               </NavLink>
               <NavLink to="/merchandise">
-                <li
-                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {/* <Link to={"/merchandise"}>Merchandise
-                </Link> */}
-                  Merchandise
-                </li>
+                <Tag title="Merchandise" />
               </NavLink>
               <NavLink to="/gallery">
-                <li
-                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {/* <Link to={"/gallery"}>Gallery
-                </Link> */}
-                  Gallery
-                </li>
+                <Tag title="Gallery" />
               </NavLink>
               <NavLink to="/team">
-                <li
-                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {/* <Link to={"/team"}>Team
-                </Link> */}
-                  Team
-                </li>
+                <Tag title="Team" />
               </NavLink>
               <NavLink to="/sponsors">
-                <li
-                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {/* <Link to={"/sponsors"}>Sponsors
-                </Link> */}
-                  Sponsors
-                </li>
+                <Tag title="Sponsors" />
               </NavLink>
               <NavLink to="/about">
-                <li
-                  className="text-white hover:font-medium hover:opacity-75 hover:text-black hover:bg-gradient-to-b from-gray-400 to-white rounded-lg p-2"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  About
-                </li>
+                <Tag title="About" />
               </NavLink>
             </ul>
           </div>
