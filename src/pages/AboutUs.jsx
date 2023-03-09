@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import PuruNavbar from "../components/PuruNavbar";
 
 export default function AboutUs({ active }) {
@@ -51,6 +52,7 @@ export default function AboutUs({ active }) {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

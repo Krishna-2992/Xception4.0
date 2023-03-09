@@ -18,7 +18,7 @@ import TeamDetails from "./components/team/TeamDetails";
 import PuruNavbar from "./components/PuruNavbar";
 import EventDetails from "./pages/EventDetails";
 import AboutUs from "./pages/AboutUs";
-import Schedule from "./pages/Scheduls";
+import Schedule from "./components/schedules/Schedules";
 
 export default function App() {
   return (
